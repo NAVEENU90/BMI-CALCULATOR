@@ -11,16 +11,16 @@ function calculateBMI() {
         bmiValue.textContent = bmi;
 
         if (bmi < 18.5) {
-            bmiComment.textContent = "Underweight";
+            bmiComment.textContent = "Underweight \u{1F614}";
             bmiComment.style.color = "#f39c12";
         } else if (bmi < 24.9) {
-            bmiComment.textContent = "Normal";
+            bmiComment.textContent = "Normal \u{1F600}";
             bmiComment.style.color = "#27ae60";
         } else if (bmi < 29.9) {
-            bmiComment.textContent = "Overweight";
+            bmiComment.textContent = "Overweight \u{1F61F}";
             bmiComment.style.color = "#e67e22";
         } else {
-            bmiComment.textContent = "Obese";
+            bmiComment.textContent = "Obese \u{1F62D}";
             bmiComment.style.color = "#c0392b";
         }
     } else {

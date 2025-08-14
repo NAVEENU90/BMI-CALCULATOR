@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, #7d00a7, #b2006e);
+  background: linear-gradient(180deg, #ffffff, #74e5ff, #68caff);
   min-height: 100vh;
 }
 
@@ -14,15 +14,16 @@ body {
 }
 
 .heading {
-  text-shadow: 2px 2px 4px rgba(50, 50, 50, 0.4);
+  text-shadow: 1px 1px 2px rgba(50, 50, 50, 0.4);
   font-size: 30px;
   font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 470;
+  font-weight: 700;
   font-style: normal;
 
 }
 
 .calculator-card {
+  border: solid 2px;
   max-width: 450px;
   width: 100%;
   padding: 25px;
@@ -30,7 +31,6 @@ body {
 
 .glass-card {
   background: rgba(255, 255, 255, 0.92);
-  border: none;
 }
 
 .input-custom {
@@ -54,9 +54,14 @@ body {
   font-size: 18px;
   color: #323232;
 }
-
+.info-text{
+  font-size: 17px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .gradient-btn {
-  background: rgb(0, 157, 255);
+  background: rgb(214, 0, 0);
   color: white;
   font-weight: 600;
   border: none;
@@ -64,18 +69,19 @@ body {
   transition: all 0.3s ease;
 }
 .gradient-btn:hover {
-  background: #0047fc;
+  color: white;
+  background: #910000;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
 
 .result-box {
+  border: solid;
   background: #ffffff;
   padding: 10px 20px;
-  border-radius: 30px;
+  border-radius: 40px;
   display: inline-block;
   font-size: 20px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .radio-container {
@@ -126,4 +132,7 @@ body {
   height: 10px;
   border-radius: 50%;
   background: white;
+}
+#bmiComment{
+  text-shadow: 1px 1px 2px rgba(50, 50, 50, 0.4);
 }
