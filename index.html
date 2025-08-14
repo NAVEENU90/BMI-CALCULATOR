@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One+SC&family=Castoro+Titling&family=Edu+QLD+Hand:wght@400..700&family=Fredericka+the+Great&family=Great+Vibes&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center min-height">
+        <div class="card shadow-lg p-4 rounded-4 glass-card calculator-card">
+            <h3 class="heading text-center mb-4">BMI Calculator</h3>
+
+            <form id="bmiForm" class="mb-4">
+                <!-- Age -->
+                <div class="mb-3">
+                    <label for="age" class="form-label fw-semibold small-label">Age</label>
+                    <input type="number" id="age" class="form-control text-center input-custom"
+                        placeholder="Enter your age" required>
+                </div>
+
+                <!-- Gender -->
+                <div class="mb-3 text-center">
+                    <label class="radio-container male-radio me-4">Male
+                        <input type="radio" name="gender" value="male" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container female-radio">Female
+                        <input type="radio" name="gender" value="female" required>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- Height & Weight -->
+                <div class="row g-3">
+                    <div class="col-6">
+                        <label for="height" class="form-label fw-semibold small-label">Height</label>
+                        <input type="number" id="height" class="form-control text-center input-custom" placeholder="cm"
+                            required>
+                    </div>
+                    <div class="col-6">
+                        <label for="weight" class="form-label fw-semibold small-label">Weight</label>
+                        <input type="number" id="weight" class="form-control text-center input-custom" placeholder="kg"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Calculate Button -->
+                <button type="button" class="btn gradient-btn btn-lg w-100 rounded-pill mt-4"
+                    id="calcBtn">Calculate</button>
+            </form>
+
+            <!-- Result -->
+            <div id="resultSection" class="text-center">
+                <p class="fw-semibold mb-1 small-label">Your BMI:</p>
+                <div id="bmiValue" class="fw-bold text-primary result-box">00.00</div>
+                <p id="bmiComment" class="mt-5 fw-semibold result">Result here</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
